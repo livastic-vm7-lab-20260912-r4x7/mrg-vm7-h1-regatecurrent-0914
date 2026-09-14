@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM7 current regate strict workflow merge
+    conditions:
+      - base = main
+      - author = livastic-vm7-secondary-20260911
+      - from-fork
+      - title = VM7_CURRENT_REGATE_TRIGGER
+    actions:
+      merge: {}
